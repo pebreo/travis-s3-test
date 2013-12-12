@@ -13,9 +13,11 @@ before_script:
 script:
   - python -m unittest testfoo
   - echo baz bar > bazbar.txt
+  - echo barney > foobar.txt
   - cat bazbar.txt
 
 after_script:
 #  - travis-artifacts upload --path hello.txt --target-path .
+  - ls *.txt | wc -l
   - travis-artifacts upload --path *.txt
   - echo https://s3.amazonaws.com/pebb/artifacts/$TRAVIS_BUILD_NUMBER/$TRAVIS_JOB_NUMBER
