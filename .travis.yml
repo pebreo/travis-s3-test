@@ -1,0 +1,14 @@
+env:
+  global:
+    - ARTIFACTS_AWS_REGION=us-east-1
+    - ARTIFACTS_S3_BUCKET=pebb
+
+before_script:
+  - gem install travis-artifacts
+
+script:
+  - echo hello > hello.txt
+  - cat hello.txt
+
+#after_script:
+#  - "travis-artifacts upload --path logs --path a/long/nested/path:short_alias"
