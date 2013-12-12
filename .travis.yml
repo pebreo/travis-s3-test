@@ -15,4 +15,4 @@ script:
 
 after_script:
 #  - travis-artifacts upload --path hello.txt --target-path .
-  - travis-artifacts upload --path hello.txt --target-path .
+  - travis-artifacts upload --path hello.txt 
