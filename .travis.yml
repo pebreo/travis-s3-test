@@ -13,7 +13,7 @@ before_script:
 script:
   - python -m unittest testfoo
   - echo hello world > hello-again.txt
-  - cat hello.txt
+  - cat hello-again.txt
 
 after_script:
 #  - travis-artifacts upload --path hello.txt --target-path .
