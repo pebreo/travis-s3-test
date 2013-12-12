@@ -12,7 +12,7 @@ before_script:
 
 script:
   - python -m unittest testfoo
-  - echo baz bar > bazbar.txt
+  - echo baz bar ban > bazbar.txt
   - echo barney > foobar.txt
   - cat bazbar.txt
 
