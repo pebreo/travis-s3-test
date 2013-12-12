@@ -12,10 +12,10 @@ before_script:
 
 script:
   - python -m unittest testfoo
-  - echo hello world > hello-again.txt
-  - cat hello-again.txt
+  - echo baz bar > bazbar.txt
+  - cat bazbar.txt
 
 after_script:
 #  - travis-artifacts upload --path hello.txt --target-path .
-  - travis-artifacts upload --path hello-again.txt 
+  - travis-artifacts upload --path *.txt 
   - echo https://s3.amazonaws.com/pebb/artifacts/${TRAVIS_BUILD_NUMBER}/${TRAVIS_JOB_NUMBER}/hello.txt
