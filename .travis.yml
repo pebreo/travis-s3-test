@@ -2,6 +2,8 @@ env:
   global:
     - ARTIFACTS_AWS_REGION=us-east-1
     - ARTIFACTS_S3_BUCKET=pebb
+    - secure: K32UigQtNvfFFnMlL4eB1EeDC5wUDOG5KOSHnjey/BaRytmfjGcALBgyTKydo7fXtpChap2jfNIZzGucPEHaetu/2d5w2fnhxZxtnrrNH4aq3TRg40cpi3G/BPb0l/SMMrFXzr/DGQullelA8DEo9mAeNpYwr3I+c7MFP+o0rOU=
+    - secure: BXfGacoFa4U/UowK+uSTAjPKXWvu9X+mDCqhRzsIzSb8qveS8lIqRPM/pK/ptyVgmGt+PJGb0XKzVGijUj1UuG7XwDiEDccS+BAe6rSZkhNdOjLcUPLZ5B+cbeH4l9m+95yQekMx3HmfyhBWMlDiqpt+BUa2a72+cDlcipaqUp4=
 
 before_script:
   - gem install travis-artifacts
@@ -11,5 +13,5 @@ script:
   - echo hello > hello.txt
   - cat hello.txt
 
-#after_script:
-#  - "travis-artifacts upload --path logs --path a/long/nested/path:short_alias"
+after_script:
+  - travis-artifacts upload --path hello.txt
