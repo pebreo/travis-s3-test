@@ -18,4 +18,4 @@ script:
 after_script:
 #  - travis-artifacts upload --path hello.txt --target-path .
   - travis-artifacts upload --path *.txt
-  - echo https://s3.amazonaws.com/pebb/artifacts/${TRAVIS_BUILD_NUMBER}/${TRAVIS_JOB_NUMBER}/hello.txt
+  - echo https://s3.amazonaws.com/pebb/artifacts/$TRAVIS_BUILD_NUMBER/$TRAVIS_JOB_NUMBER
