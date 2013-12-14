@@ -1,7 +1,9 @@
-travis-s3-test
+Purpose
 ==============
+This is just a skeleton repo that demonstrates how to use Travis CI and then transfer a file created during the test run to an Amazon AWS S3 bucket.
 
 S3 policy
+=========
 
 ```
 {
