@@ -4,6 +4,8 @@ This is just a skeleton repo that demonstrates how to use Travis CI and then tra
 
 S3 policy
 =========
+This is the Amazon AWS S3 bucket policy that you copy and paste in your bucket configuration. 
+To insert this policy you have to click on your bucket then click `Properties button -> Permissions -> Add bucket policy.` 
 
 ```
 {
