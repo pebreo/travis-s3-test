@@ -17,7 +17,7 @@ The three steps to enable Travis CI automated tests on your repo are:
 
 Amazon Web Services (AWS)
 =========
-AWS provides web services for cloud computer and cloud storage. One of those services is S3 which provides cloud storage. You sign up for a free account and at the time of writing they give 5GB storage, 20,000 Get Requests, and 2,000 Put Requests which is not bad if you are just doing personal computing stuff.
+AWS provides services for cloud computing and cloud storage. One of those services is S3 which provides cloud storage. You sign up for a free account and at the time of writing they give 5GB storage, 20,000 Get Requests, and 2,000 Put Requests which is not bad if you are just doing personal computing stuff.
 
 
 S3 policy
