@@ -5,7 +5,7 @@ This is just a skeleton repo that demonstrates how to use Travis CI and then tra
 
 Travis CI
 =========
-Travis CI allows you and your team to automatically run tests on your GitHub repo(s). It makes it easy for your team to identify bugs before you deploy. To automate the process, Travis watches your GitHub repo for any changes then it spins up a linux virtual machine and does a `git pull` on your repository and runs your tests scripts. You setup your tests scripts in the `.travis.yaml` file.  
+Travis CI allows you and your team to automatically run tests on your GitHub repo(s). It makes it easy for your team to identify bugs before you deploy. To automate the process, Travis watches your GitHub repo for any changes then it spins up a linux virtual machine and does a `git pull` on your repository and runs your tests scripts. You setup your tests scripts in the `.travis.yml` file.  
 
 The three steps to enable Travis CI automated tests on your repo are:
 
