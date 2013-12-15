@@ -25,6 +25,8 @@ S3 policy
 This is the Amazon AWS S3 bucket policy that you copy and paste in your bucket configuration. 
 To insert this policy you have to click on your bucket then click `Properties button -> Permissions -> Add bucket policy.` 
 
+You have to fill in the bucket names and the AWS ID which you get from `AWS Console -> Security Credentials -> Account Identifiers`.
+
 ```
 {
     "Version": "2013-12-13",
