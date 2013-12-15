@@ -19,5 +19,5 @@ script:
 after_script:
 #  - travis-artifacts upload --path hello.txt --target-path .
   - ls *.txt | wc -l
-  - travis-artifacts upload --path *.txt
+  - travis-artifacts upload --path *.txt # this doesn't work. it can only upload one file
   - echo https://s3.amazonaws.com/pebb/artifacts/$TRAVIS_BUILD_NUMBER/$TRAVIS_JOB_NUMBER
