@@ -19,9 +19,6 @@ Amazon Web Services (AWS)
 =========
 AWS provides web services for cloud computer and cloud storage. One of those services is S3 which provides cloud storage. You sign up for a free account and at the time of writing they give 5GB storage, 20,000 Get Requests, and 2,000 Put Requests which is not bad if you are just doing personal computing stuff.
 
-Notes
-=====
-Keep in mind that since we are using a LiveServerTestCase, so you have to make sure that your database has the right state or else your tests might not pass because it is expecting certain data from the database. In this project, I use the fixtures (initial_data.json) to *create* the sqlite3 db then the functional tests *uses* the sqlite3 database.
 
 S3 policy
 =========
